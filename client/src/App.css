@@ -1,11 +1,13 @@
 *{
     box-sizing: border-box;
+    
 }
 a{
     cursor: pointer;
 }
 body{
     color: #222;
+    background-color: #E7E8D1;
 }
 img{
     max-width: 100%;
@@ -28,7 +30,10 @@ header a{
 }
 header a.logo{
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    color: #B85042;
+    font-family: 'Libre Baskerville', serif;
+
 }
 header nav{
     display:flex;
@@ -152,4 +157,43 @@ div.post-page a.edit-btn{
 }
 a svg{
     height:20px;
+}
+
+.btn {
+    background-color: #B85042;
+    padding: 10px;
+    border-radius: 5px;
+    color: whitesmoke;
+    min-width: 60px;
+}
+
+.btn:hover {
+    background-color: #A7BEAE;
+    border-radius: 15px;
+    color: black;
+}
+
+.loginBtn, .registerBtn {
+    background-color: #B85042;
+    padding: 10px;
+    border-radius: 5px;
+    color: whitesmoke;
+    min-width: 60px;
+}
+
+.loginBtn:hover, .registerBtn:hover{
+    background-color: #A7BEAE;
+    border-radius: 15px;
+    color: black;
+}
+
+.uname, .password {
+    padding: 16px;
+    font-size: 1.5rem;
+}
+
+.btnSubmit {
+    padding: 20px;
+    font-size: 1.2rem;
+    margin-top: 20px;   
 }

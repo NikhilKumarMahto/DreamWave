@@ -26,18 +26,18 @@ export default function Header() {
 
   return (
     <header>
-      <Link to="/" className="logo">MyBlog</Link>
+      <Link to="/" className="logo">BlogWave</Link>
       <nav>
         {username && (
           <>
-            <Link to="/create">Create new post</Link>
-            <a onClick={logout}>Logout ({username})</a>
+            <Link className="btn" to="/create">Create new post</Link>
+            <a className="btn" onClick={logout}>Logout ({username})</a>
           </>
         )}
         {!username && (
           <>
-            <Link to="/login">Login</Link>
-            <Link to="/register">Register</Link>
+            <Link className="loginBtn" to="/login">Login</Link>
+            <Link className="registerBtn" to="/register">Register</Link>
           </>
         )}
       </nav>
